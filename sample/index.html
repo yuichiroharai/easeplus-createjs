@@ -49,7 +49,154 @@
 				</div>
 				<p><input class="expoInOut" type="button" value="start"></p>
 			</li>
+
 		</ul>
+		<h2>Blend</h2>
+		<div class="box">
+			<p><pre>
+// イージング関数をブレンドして新たなイージング関数を取得
+// 引数は
+// ・イージング1
+// ・イージング2
+// ・イージング1から2に移行する比率を調整するイージング(デフォルトはlinear)
+var Ease = createjs.Ease;
+createjs.Tween.get(shape)
+  .to({x:450}, 600, Ease.blend(Ease.cubicIn, Ease.backOut, Ease.sineOut));</pre></p>
+			<div class="stage blend">
+				<canvas width="600px" height="64px"></canvas>
+			</div>
+			<p><input class="blend" type="button" value="start">
+				<select class="ease1" name="ease1">
+					<option value="linear">linear</option>
+
+					<option value="sineOut">sineOut</option>
+					<option value="sineIn">sineIn</option>
+					<option value="sineInOut">sineInOut</option>
+
+					<option value="quadOut">quadOut</option>
+					<option value="quadIn">quadIn</option>
+					<option value="quadInOut">quadInOut</option>
+
+					<option value="cubicOut">cubicOut</option>
+					<option value="cubicIn" selected>cubicIn</option>
+					<option value="cubicInOut">cubicInOut</option>
+
+					<option value="quartOut">quartOut</option>
+					<option value="quartIn">quartIn</option>
+					<option value="quartInOut">quartInOut</option>
+
+					<option value="quintOut">quintOut</option>
+					<option value="quintIn">quintIn</option>
+					<option value="quintInOut">quintInOut</option>
+
+					<option value="expoOut">expoOut</option>
+					<option value="expoIn">expoIn</option>
+					<option value="expoInOut">expoInOut</option>
+
+					<option value="circOut">circOut</option>
+					<option value="circIn">circIn</option>
+					<option value="circInOut">circInOut</option>
+
+					<option value="backOut">backOut</option>
+					<option value="backIn">backIn</option>
+					<option value="backInOut">backInOut</option>
+
+					<option value="elasticOut">elasticOut</option>
+					<option value="elasticIn">elasticIn</option>
+					<option value="elasticInOut">elasticInOut</option>
+
+					<option value="bounceOut">bounceOut</option>
+					<option value="bounceIn">bounceIn</option>
+					<option value="bounceInOut">bounceInOut</option>
+				</select>
+				<select class="ease2" name="ease2">
+					<option value="linear">linear</option>
+
+					<option value="sineOut">sineOut</option>
+					<option value="sineIn">sineIn</option>
+					<option value="sineInOut">sineInOut</option>
+
+					<option value="quadOut">quadOut</option>
+					<option value="quadIn">quadIn</option>
+					<option value="quadInOut">quadInOut</option>
+
+					<option value="cubicOut">cubicOut</option>
+					<option value="cubicIn">cubicIn</option>
+					<option value="cubicInOut">cubicInOut</option>
+
+					<option value="quartOut">quartOut</option>
+					<option value="quartIn">quartIn</option>
+					<option value="quartInOut">quartInOut</option>
+
+					<option value="quintOut">quintOut</option>
+					<option value="quintIn">quintIn</option>
+					<option value="quintInOut">quintInOut</option>
+
+					<option value="expoOut">expoOut</option>
+					<option value="expoIn">expoIn</option>
+					<option value="expoInOut">expoInOut</option>
+
+					<option value="circOut">circOut</option>
+					<option value="circIn">circIn</option>
+					<option value="circInOut">circInOut</option>
+
+					<option value="backOut" selected>backOut</option>
+					<option value="backIn">backIn</option>
+					<option value="backInOut">backInOut</option>
+
+					<option value="elasticOut">elasticOut</option>
+					<option value="elasticIn">elasticIn</option>
+					<option value="elasticInOut">elasticInOut</option>
+
+					<option value="bounceOut">bounceOut</option>
+					<option value="bounceIn">bounceIn</option>
+					<option value="bounceInOut">bounceInOut</option>
+				</select>
+				<select class="easeMix" name="easeMix">
+					<option value="linear">linear</option>
+
+					<option value="sineOut" selected>sineOut</option>
+					<option value="sineIn">sineIn</option>
+					<option value="sineInOut">sineInOut</option>
+
+					<option value="quadOut">quadOut</option>
+					<option value="quadIn">quadIn</option>
+					<option value="quadInOut">quadInOut</option>
+
+					<option value="cubicOut">cubicOut</option>
+					<option value="cubicIn">cubicIn</option>
+					<option value="cubicInOut">cubicInOut</option>
+
+					<option value="quartOut">quartOut</option>
+					<option value="quartIn">quartIn</option>
+					<option value="quartInOut">quartInOut</option>
+
+					<option value="quintOut">quintOut</option>
+					<option value="quintIn">quintIn</option>
+					<option value="quintInOut">quintInOut</option>
+
+					<option value="expoOut">expoOut</option>
+					<option value="expoIn">expoIn</option>
+					<option value="expoInOut">expoInOut</option>
+
+					<option value="circOut">circOut</option>
+					<option value="circIn">circIn</option>
+					<option value="circInOut">circInOut</option>
+
+					<option value="backOut">backOut</option>
+					<option value="backIn">backIn</option>
+					<option value="backInOut">backInOut</option>
+
+					<option value="elasticOut">elasticOut</option>
+					<option value="elasticIn">elasticIn</option>
+					<option value="elasticInOut">elasticInOut</option>
+
+					<option value="bounceOut">bounceOut</option>
+					<option value="bounceIn">bounceIn</option>
+					<option value="bounceInOut">bounceInOut</option>
+				</select>
+			</p>
+		</div>
 
 	</div>
 
