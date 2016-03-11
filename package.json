@@ -1,0 +1,23 @@
+{
+  "name": "easeplus-createjs",
+  "version": "1.1.0",
+  "description": "Ease+ for TweenJS(CreateJS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yuichiroharai@github.com/yuichiroharai/easeplus-createjs.git"
+  },
+  "author": {
+    "name": "Yuichiroh Arai",
+    "url": "http://www.yuichiroharai.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuichiroharai/easeplus-createjs/issues"
+  },
+  "homepage": "https://github.com/yuichiroharai/easeplus-createjs#readme",
+  "private": "true"
+}
