@@ -12,6 +12,17 @@
 
 [createjs.easeplus.js](http://yuichiroharai.github.io/easeplus-createjs/release/1.1/createjs.easeplus.js) - 通常版
 
+## Install
+
+### npm
+```
+npm install https://github.com/yuichiroharai/easeplus-createjs.git
+```
+### Bower
+```
+bower install https://github.com/yuichiroharai/easeplus-createjs.git
+```
+
 ## Sample
 
 [Sample - Ease+ for TweenJS(CreateJS)](http://yuichiroharai.github.io/easeplus-createjs/sample/)
