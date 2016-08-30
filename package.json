@@ -1,6 +1,6 @@
 {
   "name": "easeplus-createjs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Ease+ for TweenJS(CreateJS)",
   "main": "index.js",
   "scripts": {
